@@ -9,8 +9,8 @@ export class Giphy {
 
   get Template() {
     return `
-    <div id="${this.id} class="card m-3" style="width: 18rem;">
-      <img onclick="app.giftsController.selectGif()" src="${this.gifUrl}" class="card-img-top" alt="gif">
+    <div class="card m-3" style="width: 18rem;">
+      <img onclick="app.giftsController.selectGif('${this.id}')" src="${this.gifUrl}" class="card-img-top" alt="gif">
   </div>
     `
   }
