@@ -5,7 +5,7 @@ import { Giphy } from "../Models/Giphy.js"
 
 const giphyApiKey = 'HlU3G9Lxkvf5FQAbZ16iSsGWRcExi0sE'
 const limit = 20
-const rating = 'pg-13'
+const rating = 'pg'
 
 const giphyApi = axios.create({
   baseURL: `https://api.giphy.com/v1/gifs/search?api_key=${giphyApiKey}&limit=${limit}&rating=${rating}&q=`,
