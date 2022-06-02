@@ -1,7 +1,7 @@
 export class Giphy {
-  constructor(gifUrl) {
-    this.gifUrl = gifUrl
-    console.log(gifUrl)
+  constructor(data) {
+    this.gifUrl = data.images.original.webp
+    console.log(this.gifUrl)
   }
 
   get Template() {

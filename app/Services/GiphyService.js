@@ -19,7 +19,7 @@ class GiphyService {
     try {
       const res = await giphyApi.get(search)
       // console.log(res.data.data)
-      ProxyState.giphys = res.data.data.map(g => new Giphy(g.images.original.webp))
+      ProxyState.giphys = res.data.data.map(g => new Giphy(g))
     } catch(error) {
       console.error(error)
     }
