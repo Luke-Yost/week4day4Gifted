@@ -25,8 +25,12 @@
         <!-- Giphy stuff -->
         giphy stuff
         <form onsubmit="app.giftsController.create()">
-          <input type="text" name="tag" id="tag" value="meowmeowmeow">
-          <input type="text" name="url" id="url" value="mrowmrowmrow">
+          <label for="tag">Tag:
+            <input type="text" name="tag" id="tag" value="meowmeowmeow">
+          </label>
+          <label for="url">Gif Url:
+            <input type="text" name="url" id="url" value="mrowmrowmrow">
+          </label>
           <button class="btn btn-dark text-light">Create</button>
         </form>
         <form onsubmit="app.giphyController.search()">
