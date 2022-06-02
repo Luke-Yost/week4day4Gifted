@@ -8,7 +8,7 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Gift').Gift[]} */
   gifts = []
   giphys = []
-  selectedGifId = ''
+  // selectedGifId = ''
 }
 
 export const ProxyState = new Proxy(new AppState(), {
