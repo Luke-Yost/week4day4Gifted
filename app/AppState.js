@@ -5,7 +5,7 @@ class AppState extends EventEmitter {
   // /** @type {import('./Models/Value').Value[]} */
   // values = []
 
-  /** @type {import('./Models/Gift').Value[]} */
+  /** @type {import('./Models/Gift').Gift[]} */
   gifts = []
 }
 
