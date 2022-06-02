@@ -16,7 +16,7 @@
 
 <body>
   <header class="px-4 py-2 bg-dark text-light">
-    <h1>Gifted</h1>
+    <h1><b>GIF</b>TED</h1>
   </header>
 
   <main class="container-fluid">
@@ -24,9 +24,14 @@
       <div class="col-4 bg-secondary" id="new-gift">
         <!-- Giphy stuff -->
         giphy stuff
+        <form onsubmit="app.giftsController.create()">
+          <input type="text" name="tag" id="tag" value="meowmeowmeow">
+          <input type="text" name="url" id="url" value="mrowmrowmrow">
+          <button class="btn btn-dark text-light">Create</button>
+        </form>
         <form onsubmit="app.giphyController.search()">
           <input type="text" name="search" id="search">
-          <button class="btn btn-primary">
+          <button class="btn btn-dark text-light">
             <i class="mdi mdi-magnify"></i>
           </button>
         </form>
